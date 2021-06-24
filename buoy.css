@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* width:625,height:444 */
+.buoy {
+  display: flex;
+  width: 601px;
+  height: 440px;
+  margin: 100px auto;
+  padding-left: 20px;
+  background-color: #fbf8fb;
+  flex-direction: column;
+  border: 2px solid #dedbde;
+}
+
+/* 全局样式开始 */
+.buoy input {
+  height: 22px;
+  margin-top: 10px;
+  border: 1px solid #dedbde;
+}
+
+/*全局样式结束 */
+.buoy .title {
+  height: 45px;
+  line-height: 45px;
+  background-color: #fbf8fb;
+}
+
+/* content部分布局 */
+.buoy div:nth-child(2) {
+  flex: 1;
+}
+
+.content {
+  /* 设置滚动条一步到位 */
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: flex;
+  height: 65px;
+  /* background-color: pink; */
+  flex-direction: row;
+}
+
+.user input {
+  width: 185px;
+}
+
+.user div:nth-child(2) {
+  margin-left: 30px;
+}
+/* 设置input框中的placeholder值样式，设置字体大小小于12px */
+.user .owner::-webkit-input-placeholder {
+  font-size: 14px;
+  /* 缩小后的字体靠左 */
+  -webkit-transform-origin-x:0;
+  transform: scale(0.8);
+  text-indent: 8px;
+}
+
+.user span,
+.tit span,
+.des span,
+.attach span {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.user span i,
+.tit span i {
+  font-style: normal;
+  color: red;
+}
+
+.tit {
+  height: 65px;
+}
+
+.tit input {
+  width: 578px;
+}
+
+.des {
+  height: 135px;
+}
+
+.des div {
+  width: 578px;
+  height: 98px;
+  border: 2px solid #dedbde;
+}
+
+.attach {
+  height: 80px;
+}
+
+.attach button {
+  width: 78px;
+  height: 23px;
+  font-size: 12px;
+  color: #0072c4;
+  border: 1px solid #0072c4;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.attach i {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+  -webkit-transform-origin-x: 0;
+  transform: scale(0.8);
+  color: #bbb9bb;
+}
+
+/* footer部分布局 */
+.buoy .footer {
+  display: flex;
+  height: 49px;
+  border-top: 1px solid #dedbde;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buoy .footer button {
+  width: 90px;
+  height: 22px;
+  font-size: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.buoy .footer button:nth-child(1) {
+  color: #0072c4;
+  border: 1px solid #0072c4;
+  background-color: #fff;
+}
+
+.buoy .footer button:nth-child(2) {
+  margin: 0 15px 0 10px;
+  color: #ffffff;
+  background-color: #0072c4;
+}
